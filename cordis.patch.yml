@@ -1,0 +1,4 @@
+- insert:
+    - id: plugin-island
+      name: '@local/plugin-island'
+      config: {}

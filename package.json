@@ -1,0 +1,42 @@
+{
+  "name": "@local/plugin-island",
+  "description": "A Dynamic-Island-style plugin launcher for the Web GUI: dock plugin panel icons (up to five visible, ellipsis for the full list, plus button to add), reopen them with one click, drag the island anywhere.",
+  "version": "1.2.4",
+  "author": "nineberg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nineberg/dsh-plugin-island.git"
+  },
+  "homepage": "https://github.com/nineberg/dsh-plugin-island#readme",
+  "bugs": {
+    "url": "https://github.com/nineberg/dsh-plugin-island/issues"
+  },
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
