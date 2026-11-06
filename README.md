@@ -1,5 +1,7 @@
 # 插件灵动岛 (`plugin-island`)
 
+![License](https://img.shields.io/github/license/nineberg/dsh-plugin-island) ![Platform](https://img.shields.io/badge/DeepSeek%20Harness-plugin-0969da) ![GitHub stars](https://img.shields.io/github/stars/nineberg/dsh-plugin-island?style=social)
+
 DeepSeek Harness Web GUI 的 **Dynamic-Island 风格插件启动器**：把侧栏插件图标拖进"灵动岛"收纳成启动芯片，一键重开面板；整座岛可在屏幕上自由拖动。
 
 ## 功能
